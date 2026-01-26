@@ -1,0 +1,285 @@
+/* --- Global Reset for Home --- */
+.home {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+.body-wrapper {
+  width: 100%;
+  background: #fff;
+}
+
+/* --- Hero Section --- */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("/src/assets/Home_Hero.jpeg") center/cover no-repeat;
+  height: 90vh;
+  min-height: 700px;
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: flex-end; /* Push content to bottom Savills-style */
+  padding-bottom: 50px;
+}
+
+.hero__overlay {
+  background: rgba(0, 51, 102, 0.9); /* Deep Navy */
+  padding: 40px;
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.hero__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.hero__buttons button {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.hero__buttons button:hover {
+  background: #FFCC00; /* Savills Yellow */
+  color: #003366;
+  border-color: #FFCC00;
+}
+
+.hero__search {
+  display: flex;
+  gap: 0px; /* Flush look */
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.hero__search input,
+.hero__search select,
+.hero__region,
+.hero__searchBtn {
+  padding: 15px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+}
+
+.hero__search input { flex: 1; min-width: 250px; }
+
+.hero__region { background: #f9f9f9; color: #555; cursor: pointer; }
+
+.hero__searchBtn {
+  background: #FFCC00;
+  color: #003366;
+  font-weight: 800;
+  cursor: pointer;
+  border: none;
+  padding: 0 30px;
+}
+
+.hero__filters select {
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
+  color: white;
+  margin: 0 5px;
+}
+
+/* --- Intro Section --- */
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 6rem auto;
+  padding: 0 2rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .hero-section { grid-template-columns: 1fr 1fr; }
+}
+
+.hero-text h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #003366;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.hero-text a {
+  color: #003366;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid #FFCC00;
+  padding-bottom: 4px;
+}
+
+.hero-image img {
+  width: 100%;
+  box-shadow: 20px 20px 0px #f0f4f8;
+}
+
+/* --- Features Grid --- */
+.features-section {
+  max-width: 1200px;
+  margin: 6rem auto;
+  padding: 0 2rem;
+}
+
+.features-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #003366;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  margin-bottom: 6rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .features-grid { grid-template-columns: 1fr 1fr; }
+  .features-grid.reverse .feature-text { order: 1; }
+  .features-grid.reverse .feature-image { order: 2; }
+}
+
+.feature-image { position: relative; }
+
+.yellow-bar {
+  position: absolute;
+  top: 0;
+  left: -15px;
+  width: 6px;
+  height: 60px;
+  background: #FFCC00;
+  z-index: 2;
+}
+
+.feature-image img { width: 100%; object-fit: cover; }
+
+.feature-text h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.feature-text a {
+  color: #003366;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+
+/* --- Overlays & Insets --- */
+.feature-image.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-image.overlay img {
+  filter: brightness(0.5);
+}
+
+.overlay-text {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  z-index: 3;
+}
+
+.overlay-text .years { font-size: 2rem; display: block; font-weight: 300; }
+.overlay-text strong { font-size: 3.5rem; color: #FFCC00; }
+
+.inset-image {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 180px !important;
+  border: 8px solid #fff;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* --- Full Background CTA --- */
+.full-bg-section {
+  position: relative;
+  margin: 6rem 0;
+  height: 450px;
+}
+
+.full-bg-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.full-bg-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0, 51, 102, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+  color: #fff;
+}
+
+.full-bg-overlay h3 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; }
+
+/* --- Footer CTA --- */
+.cta-banner {
+  background: #FFCC00;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #003366;
+}
+
+.cta-banner h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; }
+.cta-banner p { font-size: 1.2rem; margin-bottom: 2rem; font-weight: 500; }
+
+.cta-button {
+  background: #003366;
+  color: #fff;
+  padding: 15px 40px;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.cta-button:hover { background: #001a33; }
