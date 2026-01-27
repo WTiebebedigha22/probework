@@ -26,7 +26,7 @@ const Home = () => {
               placeholder="Search by vessel, service, or regional office..."
             />
             <button className="hero__region">Select Region</button>
-            <button className="hero__searchBtn">Search</button>
+            <button className="hero__searchBtn">Inquire</button>
           </div>
           
           <div className="hero__filters">

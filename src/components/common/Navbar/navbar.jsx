@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <img src="/src/assets/logo.png" alt="Logo" />
+        <img src="/public/Logo.png" alt="Logo" />
       </div>
 
       <button className="navbar__toggle" onClick={() => setMenuOpen(!menuOpen)}>

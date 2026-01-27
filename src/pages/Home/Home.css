@@ -11,13 +11,13 @@
 
 /* --- Hero Section --- */
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("/src/assets/Home_Hero.jpeg") center/cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("/src/assets/Home_Hero.png") center/cover no-repeat;
   height: 90vh;
   min-height: 700px;
   color: white;
   position: relative;
   display: flex;
-  align-items: flex-end; /* Push content to bottom Savills-style */
+  align-items: flex-end; 
   padding-bottom: 50px;
 }
 
@@ -50,6 +50,7 @@
 .hero__buttons button {
   background: rgba(255,255,255,0.1);
   border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 30px;
   padding: 10px 20px;
   cursor: pointer;
   color: white;
@@ -60,9 +61,8 @@
 }
 
 .hero__buttons button:hover {
-  background: #FFCC00; /* Savills Yellow */
-  color: #003366;
-  border-color: #FFCC00;
+  background: #003366;
+  color: #fff;
 }
 
 .hero__search {
@@ -88,8 +88,8 @@
 .hero__region { background: #f9f9f9; color: #555; cursor: pointer; }
 
 .hero__searchBtn {
-  background: #FFCC00;
-  color: #003366;
+  background: #014486fb;
+  color: #fff;
   font-weight: 800;
   cursor: pointer;
   border: none;
@@ -122,7 +122,7 @@
 
 .hero-text h2 {
   font-size: 2.2rem;
-  font-weight: 700;
+  font-weight: 750;
   color: #003366;
   margin-bottom: 1.5rem;
 }
@@ -138,7 +138,7 @@
   color: #003366;
   font-weight: 700;
   text-decoration: none;
-  border-bottom: 2px solid #FFCC00;
+  border-bottom: 2px solid navy;
   padding-bottom: 4px;
 }
 
@@ -184,7 +184,7 @@
   left: -15px;
   width: 6px;
   height: 60px;
-  background: #FFCC00;
+  background: navy;
   z-index: 2;
 }
 
@@ -224,7 +224,7 @@
 }
 
 .overlay-text .years { font-size: 2rem; display: block; font-weight: 300; }
-.overlay-text strong { font-size: 3.5rem; color: #FFCC00; }
+.overlay-text strong { font-size: 3.5rem; color: navy; }
 
 .inset-image {
   position: absolute;
@@ -263,10 +263,10 @@
 
 /* --- Footer CTA --- */
 .cta-banner {
-  background: #FFCC00;
+  background: radial-gradient(rgba(0, 0, 255, 0.568), rgba(0, 0, 128, 0.719));
   padding: 4rem 2rem;
   text-align: center;
-  color: #003366;
+  color: #fff;
 }
 
 .cta-banner h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; }
