@@ -1,285 +1,277 @@
-/* --- Global Reset for Home --- */
+/* --- Global Reset & Typography --- */
+:root {
+  --savills-navy: #001e3d; /* Institutional Dark Blue */
+  --off-white: #f9f9f9;
+  --text-main: #1a1a1a;
+  --border-light: #e0e0e0;
+}
+
 .home {
   font-family: 'Inter', sans-serif;
-  color: #333;
+  color: var(--text-main);
+  background-color: #fff;
 }
 
-.body-wrapper {
-  width: 100%;
-  background: #fff;
-}
-
-/* --- Hero Section --- */
+/* --- Hero Section (The "Search First" Logic) --- */
 .hero {
-  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("/src/assets/Home_Hero.png") center/cover no-repeat;
-  height: 90vh;
-  min-height: 700px;
-  color: white;
-  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+              url("/src/assets/Home_Hero.JPG") center/cover no-repeat;
+  height: 85vh;
   display: flex;
-  align-items: flex-end; 
-  padding-bottom: 50px;
+  align-items: flex-end; /* Center-aligned like premium consultancy sites */
+  justify-content: center;
 }
 
 .hero__overlay {
-  background: rgba(0, 51, 102, 0.9); /* Deep Navy */
-  padding: 40px;
+  background: var(--savills-navy);
+  padding: 4rem;
   width: 90%;
   max-width: 1100px;
-  margin: 0 auto;
-  border-radius: 4px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-  text-align: center;
+  height: fit-content;
+  border-radius: 25px;
+  box-shadow: 30px 30px 0px rgba(0, 30, 61, 0.2); /* Structural depth */
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  font-weight: 700;
-  letter-spacing: -1px;
-}
-
-.hero__buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  margin-bottom: 25px;
-}
-
-.hero__buttons button {
-  background: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.4);
-  border-radius: 30px;
-  padding: 10px 20px;
-  cursor: pointer;
-  color: white;
-  transition: 0.3s;
-  font-size: 13px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.hero__buttons button:hover {
-  background: #003366;
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  margin-bottom: 2.5rem;
   color: #fff;
 }
 
+/* Savills Search Bar: Flat, White, Segmented */
 .hero__search {
   display: flex;
-  gap: 0px; /* Flush look */
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 15px;
+  background: #fff;
+  border: 1px solid var(--savills-navy);
 }
 
-.hero__search input,
-.hero__search select,
-.hero__region,
-.hero__searchBtn {
-  padding: 15px;
-  border: 1px solid #ddd;
-  outline: none;
-  font-size: 14px;
+.hero__search input, .hero__search select {
+  padding: 1.5rem;
+  border: none;
+  border-right: 1px solid var(--border-light);
+  font-size: 1rem;
+  flex: 1;
 }
 
-.hero__search input { flex: 1; min-width: 250px; }
-
-.hero__region { background: #f9f9f9; color: #555; cursor: pointer; }
-
 .hero__searchBtn {
-  background: #014486fb;
+  background: var(--savills-navy);
   color: #fff;
-  font-weight: 800;
+  padding: 0 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   cursor: pointer;
   border: none;
-  padding: 0 30px;
+  transition: opacity 0.3s;
 }
 
-.hero__filters select {
-  padding: 10px;
-  font-size: 13px;
-  border: 1px solid rgba(255,255,255,0.2);
-  background: rgba(255,255,255,0.1);
-  color: white;
-  margin: 0 5px;
+.hero__searchBtn:hover {
+  opacity: 0.9;
 }
 
-/* --- Intro Section --- */
-.hero-section {
+/* --- Content Sections --- */
+.hero-section, .features-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 3rem;
-  max-width: 1200px;
-  margin: 6rem auto;
-  padding: 0 2rem;
-  align-items: center;
-}
-
-@media (min-width: 768px) {
-  .hero-section { grid-template-columns: 1fr 1fr; }
-}
-
-.hero-text h2 {
-  font-size: 2.2rem;
-  font-weight: 750;
-  color: #003366;
-  margin-bottom: 1.5rem;
-}
-
-.hero-text p {
-  color: #555;
-  margin-bottom: 1.5rem;
-  line-height: 1.8;
-  font-size: 1.1rem;
-}
-
-.hero-text a {
-  color: #003366;
-  font-weight: 700;
-  text-decoration: none;
-  border-bottom: 2px solid navy;
-  padding-bottom: 4px;
-}
-
-.hero-image img {
-  width: 100%;
-  box-shadow: 20px 20px 0px #f0f4f8;
-}
-
-/* --- Features Grid --- */
-.features-section {
-  max-width: 1200px;
-  margin: 6rem auto;
-  padding: 0 2rem;
-}
-
-.features-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #003366;
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: 1fr;
+  max-width: 1200px; /* Slightly tightened for better focus */
+  margin: 6rem auto;  /* Balanced margin */
+  padding: 3rem;      /* Internal padding for the border */
   gap: 4rem;
-  margin-bottom: 6rem;
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center; /* Vertically centralizes text next to images */
+  
+  /* The "Round Borders" & Centralized Look */
+  background: #ffffff; 
+  border: 1px solid #e0e0e0; 
+  border-radius: 24px;  /* Smooth rounded corners */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Optional: adds depth */
 }
 
-@media (min-width: 768px) {
-  .features-grid { grid-template-columns: 1fr 1fr; }
-  .features-grid.reverse .feature-text { order: 1; }
-  .features-grid.reverse .feature-image { order: 2; }
+/* Ensure text inside is also centered if there's only one column */
+.hero-text, .feature-text {
+  text-align: left; /* Keeps editorial look; use 'center' if you want full symmetry */
+  padding: 1rem;
 }
 
-.feature-image { position: relative; }
-
-.yellow-bar {
-  position: absolute;
-  top: 0;
-  left: -15px;
-  width: 6px;
-  height: 60px;
-  background: navy;
-  z-index: 2;
+.hero-text h2, .feature-text h3 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--savills-navy);
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
 }
 
-.feature-image img { width: 100%; object-fit: cover; }
-
-.feature-text h3 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #003366;
-  margin-bottom: 1rem;
-}
-
-.feature-text a {
-  color: #003366;
-  font-weight: 700;
-  text-decoration: none;
-  margin-top: 1.5rem;
-  display: inline-block;
-}
-
-/* --- Overlays & Insets --- */
-.feature-image.overlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.feature-image.overlay img {
-  filter: brightness(0.5);
-}
-
-.overlay-text {
-  position: absolute;
-  text-align: center;
-  color: #fff;
-  z-index: 3;
-}
-
-.overlay-text .years { font-size: 2rem; display: block; font-weight: 300; }
-.overlay-text strong { font-size: 3.5rem; color: navy; }
-
-.inset-image {
-  position: absolute;
-  bottom: -30px;
-  right: -30px;
-  width: 180px !important;
-  border: 8px solid #fff;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-/* --- Full Background CTA --- */
-.full-bg-section {
-  position: relative;
-  margin: 6rem 0;
-  height: 450px;
-}
-
-.full-bg-section img {
+/* Ensure images within these sections are also rounded */
+.hero-section img, .features-grid img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  border-radius: 16px; 
   object-fit: cover;
+}
+
+/* Responsive Tweak: Center text when stacked on mobile */
+@media (max-width: 768px) {
+  .hero-section, .features-grid {
+    margin: 2rem 1rem;
+    padding: 2rem;
+    text-align: center;
+  }
+}
+
+/* --- Imagery (The Blue Anchor Style) --- */
+.hero-image-bg, .img-team-bg, .img-analysis-bg, .img-experts-bg {
+  width: 100%;
+  height: 550px;
+  background-size: cover;
+  background-position: center;
+  /* Instead of yellow bars, use thick Navy borders for a 'frame' look */
+  border-left: 15px solid var(--savills-navy); 
+}
+
+.inset-image-bg {
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+  width: 250px;
+  height: 250px;
+  border: 15px solid #fff;
+  background-size: cover;
+  /* Use a subtle grey 'block' shadow */
+  box-shadow: 20px 20px 0px var(--off-white); 
+}
+/* --- Full Background Section (Institutional Impact) --- */
+.full-bg-section {
+  height: 600px;
+  max-width: 1300px;      /* Match your other sections */
+  margin: 12rem auto;     /* Centered horizontally */
+  position: relative;
+  
+  /* Rounded Borders */
+  border-radius: 30px;
+  overflow: hidden;       /* Essential: Clips the fixed background to the rounded corners */
+  
+  /* Fixed Background Fix */
+  background-image: url("/src/assets/vessel.JPG");
+  background-attachment:local;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
 }
 
 .full-bg-overlay {
   position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(0, 51, 102, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background: linear-gradient(90deg, var(--savills-navy) 0%, rgba(0, 30, 61, 0.4) 100%);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 4rem;
-  color: #fff;
+  align-items: center;
+  padding: 0 8%; /* Balanced spacing */
 }
 
-.full-bg-overlay h3 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; }
+.full-bg-overlay h3 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  max-width: 600px;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 2.5rem;
+}
+
+.full-bg-overlay p {
+  font-size: 1.2rem; /* Slightly smaller than H3 for hierarchy */
+  font-weight: 400;   /* Medium weight for readability */
+  color: #fff;
+  margin: 0;
+}
+
+.full-bg-overlay a {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 4px;
+  transition: all 0.3s ease;
+  white-space: nowrap; /* Prevents link from wrapping */
+}
+
+/* Hover Effect */
+.full-bg-overlay a:hover {
+  border-bottom-width: 5px;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.8);
+}
 
 /* --- Footer CTA --- */
 .cta-banner {
-  background: radial-gradient(rgba(0, 0, 255, 0.568), rgba(0, 0, 128, 0.719));
-  padding: 4rem 2rem;
+  /* Updated to a sleek, modern linear gradient with a slight angle */
+  background: linear-gradient(135deg, #001a33 0%, #003366 100%);
+  padding: 6rem 2rem; /* Increased vertical padding for more "breathability" */
   text-align: center;
   color: #fff;
+  position: relative;
+  overflow: hidden;
 }
 
-.cta-banner h2 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem; }
-.cta-banner p { font-size: 1.2rem; margin-bottom: 2rem; font-weight: 500; }
+/* Subtle decorative element to make the background less "flat" */
+.cta-banner::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -10%;
+  width: 40%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.03);
+  transform: rotate(20deg);
+  pointer-events: none;
+}
+
+.cta-banner h2 { 
+  font-size: 2.8rem; 
+  font-weight: 800; 
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.cta-banner p { 
+  font-size: 1.25rem; 
+  margin-bottom: 3rem; 
+  font-weight: 400; 
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
 
 .cta-button {
-  background: #003366;
-  color: #fff;
-  padding: 15px 40px;
+  display: inline-block;
+  background: #ffffff; /* Contrast button (white on navy) is much more clickable */
+  color: #003366;
+  padding: 18px 45px;
   text-decoration: none;
   font-weight: 700;
   text-transform: uppercase;
-  transition: 0.3s;
+  letter-spacing: 1px;
+  border-radius: 4px; /* Slight rounding looks more professional than sharp corners */
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Smooth "pop" effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.cta-button:hover { background: #001a33; }
+.cta-button:hover { 
+  background: #f0f0f0;
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  color: #001a33;
+}
+
+.cta-button:active {
+  transform: translateY(-2px);
+}
