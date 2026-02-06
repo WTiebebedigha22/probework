@@ -4,13 +4,11 @@ import "./Home.css";
 const Home = () => {
   return (
     <div className="home">
-      {/* HERO SECTION - Institutional Search Focus */}
       <section className="hero">
         <div className="hero__overlay">
           <h1>Reliable Offshore & <br />Maritime Logistics</h1>
 
           <div className="hero__search-container">
-            {/* Main Search Bar */}
             <div className="hero__search">
               <select className="search-select">
                 <option>Project Type</option>
@@ -25,7 +23,6 @@ const Home = () => {
               <button className="hero__searchBtn">Search</button>
             </div>
 
-            {/* Sub-Filters: Institutional Style */}
             <div className="hero__filters">
               <button className="filter-link">Technical Engineering</button>
               <button className="filter-link">Vessel Management</button>
@@ -36,7 +33,6 @@ const Home = () => {
       </section>
 
       <div className="body-wrapper">
-        {/* SECTION 1: INTRODUCTION - Editorial Layout */}
         <section className="hero-section">
           <div className="hero-text">
             <h2>Your Operations in <br />Expert Hands</h2>
@@ -50,11 +46,7 @@ const Home = () => {
           <div className="hero-image-bg"></div> 
         </section>
 
-        {/* FEATURES GRID */}
         <section className="features-section">
-          <h2 className="features-title">Engineering Excellence</h2>
-
-          {/* GRID 1: STATS OVERLAY */}
           <div className="features-grid">
             <div className="feature-image-container">
               <div className="blue-anchor-bar"></div>
@@ -75,7 +67,6 @@ const Home = () => {
             </div>
           </div>
 
-          {/* GRID 2: RESEARCH - Replaced 'reverse' with standard layout for cleaner flow */}
           <div className="features-grid reverse">
              <div className="feature-text">
               <h3>Empowering you with world-class logistics</h3>
@@ -91,12 +82,10 @@ const Home = () => {
             </div>
           </div>
 
-          {/* GRID 3: EXPERTS INSET */}
           <div className="features-grid">
             <div className="feature-image-container">
               <div className="blue-anchor-bar"></div>
               <div className="img-experts-bg"></div>
-              <div className="inset-image-bg"></div>
             </div>
 
             <div className="feature-text">
@@ -110,7 +99,6 @@ const Home = () => {
           </div>
         </section>
 
-        {/* FULL WIDTH IMAGE SECTION - Parallax Ready */}
         <section className="full-bg-section">
           <div className="full-bg-overlay">
             <h3>Wondering what your fleet efficiency is?</h3>
@@ -119,7 +107,6 @@ const Home = () => {
           </div>
         </section>
 
-        {/* FINAL CTA - Modern Minimalist */}
         <section className="cta-banner">
           <h2>Ready to move with confidence?</h2>
           <p>Whether managing assets or engineering, we’re here to help.</p>

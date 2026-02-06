@@ -29,7 +29,7 @@ const Footer = () => {
             <li><a href="#">About Us</a></li>
             <li><a href="#">Safety & HSE</a></li>
             <li><a href="#">Global Offices</a></li>
-            <li><a href="#">Careers</a></li>
+            <li><a href="#">Services</a></li>
             <li><a href="#">Insights</a></li>
           </ul>
         </div>
@@ -46,7 +46,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <div className="bottom-content">
-          <p>&copy; {new Date().getFullYear()} Probework Resources Limited.</p>
+          <p>&copy; {new Date().getFullYear()} ProbeWork Resources Limited.</p>
           <div className="legal-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Use</a>
