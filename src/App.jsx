@@ -3,9 +3,9 @@ import NavBar from "./components/common/Navbar/navbar"
 import Footer from "./components/common/Footer/Footer"
 import Home from "./pages/Home/Home"
 import About from "./pages/About/About"
-//import Safety from "./pages/Safety/Safety"
-//import Services from "./pages/Services/Services"
-//import Contact from "./pages/Contact/Contact"
+import Safety from "./pages/Safety/Safety"
+import Services from "./pages/Services/Services"
+import Contact from "./pages/Contact/Contact"
 
 
 
@@ -22,6 +22,9 @@ function App() {
             <Routes>
               <Route path="/" element={<Home/>} />
               <Route path="/about" element={<About/>} />
+              <Route path="/safety" element={<Safety/>} />
+              <Route path="/services" element={<Services/>} />
+              <Route path="/contact" element={<Contact/>} />
             </Routes>
           <Footer/>
           </>

@@ -1,0 +1,124 @@
+:root {
+  --loopin-indigo: #6366f1;
+  --loopin-slate: #0f172a;
+  --loopin-emerald: #10b981;
+  --loopin-bg: #f8fafc;
+  --radius-lg: 24px;
+  --radius-pill: 100px;
+  --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hse-page {
+  background-color: var(--loopin-bg);
+  color: var(--loopin-slate);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Hero Section */
+.hse-hero {
+  padding: 120px 5% 80px;
+  text-align: center;
+  background: radial-gradient(circle at top right, #ecfdf5 0%, #f8fafc 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hse-badge {
+  background: #dcfce7;
+  color: var(--loopin-emerald);
+  padding: 8px 18px;
+  border-radius: var(--radius-pill);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+}
+
+.hse-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+
+.text-gradient-safe {
+  background: linear-gradient(135deg, var(--loopin-emerald), var(--loopin-indigo));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Core Pillars Grid */
+.pillars-section {
+  padding: 80px 10%;
+}
+
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.pillar-card {
+  background: white;
+  padding: 48px;
+  border-radius: var(--radius-lg);
+  border: 1px solid #e2e8f0;
+  transition: var(--transition);
+}
+
+.pillar-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--loopin-emerald);
+  box-shadow: 0 20px 40px rgba(16, 185, 129, 0.08);
+}
+
+.pillar-icon {
+  width: 56px;
+  height: 56px;
+  background: #f0fdf4;
+  color: var(--loopin-emerald);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+}
+
+/* Stats Section (Loopin Style) */
+.hse-stats {
+  background: var(--loopin-slate);
+  border-radius: 40px;
+  margin: 0 10% 80px;
+  padding: 60px;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+.stat-item h3 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--loopin-emerald);
+  margin-bottom: 8px;
+}
+
+.stat-item p {
+  color: #94a3b8;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 768px) {
+  .hse-stats {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin: 0 5% 60px;
+  }
+}

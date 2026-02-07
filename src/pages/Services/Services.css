@@ -1,0 +1,117 @@
+:root {
+  --loopin-indigo: #6366f1;
+  --loopin-slate: #0f172a;
+  --loopin-gray: #64748b;
+  --loopin-bg: #f8fafc;
+  --radius-lg: 24px;
+  --radius-pill: 100px;
+  --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.services-page {
+  background-color: var(--loopin-bg);
+  color: var(--loopin-slate);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Header Section */
+.services-header {
+  padding: 120px 5% 60px;
+  text-align: center;
+  background: radial-gradient(circle at top right, #eef2ff 0%, #f8fafc 100%);
+}
+
+.service-badge {
+  background: #e0e7ff;
+  color: var(--loopin-indigo);
+  padding: 6px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+/* Service Grid Styles */
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5% 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 32px;
+}
+
+.service-module {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  border: 1px solid #e2e8f0;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.service-module:hover {
+  transform: translateY(-10px);
+  border-color: var(--loopin-indigo);
+  box-shadow: 0 30px 60px rgba(99, 102, 241, 0.08);
+}
+
+.module-icon {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.module-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.module-description {
+  color: var(--loopin-gray);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Tech Tags (Pill Style) */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.tag {
+  background: #f1f5f9;
+  color: #475569;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/* Featured Solution Bar (Loopin Style) */
+.featured-solution {
+  background: var(--loopin-slate);
+  color: white;
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  margin-top: 40px;
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .featured-solution {
+    flex-direction: column;
+    text-align: center;
+  }
+}
