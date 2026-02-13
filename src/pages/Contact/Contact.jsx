@@ -4,79 +4,116 @@ import './Contact.css';
 const Contact = () => {
   return (
     <div className="contact-page">
-      <header className="contact-header">
-        <div className="contact-badge">Connect With Us</div>
-        <h1 className="text-5xl font-extrabold tracking-tight mb-4">
-          How can we help?
-        </h1>
-        <p className="text-slate-500 max-w-xl mx-auto text-lg">
-          Whether you have a technical inquiry or need a comprehensive asset 
-          integrity audit, our experts are ready to assist.
-        </p>
+      {/* --- HERO HEADER --- */}
+      <header className="contact-hero">
+        <div className="contact-hero-overlay">
+          <div className="service-badge">Global Liaison</div>
+          <h1>Strategic Technical <br />Consultation</h1>
+          <p>
+            Engage our engineering team for specialized asset integrity audits, 
+            statutory inspections, or lifecycle management inquiries.
+          </p>
+        </div>
       </header>
 
-      <div className="contact-container">
-        {/* Sidebar Info */}
-        <div className="contact-info-sidebar">
-          <div className="info-card">
-            <div className="info-icon">📞</div>
-            <span className="info-label">Phone Support</span>
-            <div className="info-value">+234 813 463 5548</div>
-            <div className="info-value">+234 902 810 0161</div>
-          </div>
+      <div className="body-wrapper">
+        <div className="contact-layout">
+          {/* LEFT: Contact Information */}
+          <div className="contact-info-panel">
+            <div className="blue-anchor-bar"></div>
+            <h2>Technical Offices</h2>
+            <p className="panel-subtext">Providing comprehensive coverage for onshore and offshore assets across Africa.</p>
 
-          <div className="info-card">
-            <div className="info-icon">✉️</div>
-            <span className="info-label">Email Inquiries</span>
-            <div className="info-value">info@probeworks.com</div>
-            <div className="info-value">lucky-ochuko@probeworks.com</div>
-          </div>
-
-          <div className="info-card">
-            <div className="info-icon">🌍</div>
-            <span className="info-label">Headquarters</span>
-            <div className="info-value">Serving Onshore & Offshore Assets across Africa</div>
-          </div>
-        </div>
-
-        {/* Contact Form */}
-        <div className="contact-form-wrapper">
-          <form onSubmit={(e) => e.preventDefault()}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div className="form-group">
-                <label className="form-label">Full Name</label>
-                <input type="text" className="form-input" placeholder="Lucky Ochuko" />
+            <div className="info-blocks">
+              {/* ADDRESS */}
+              <div className="info-item">
+                <span className="info-icon-small">📍</span>
+                <div>
+                  <h4>Primary Base</h4>
+                  <p>Serving Onshore & Offshore Assets, <br />Port Harcourt / Lagos, Nigeria</p>
+                </div>
               </div>
-              <div className="form-group">
-                <label className="form-label">Work Email</label>
-                <input type="email" className="form-input" placeholder="name@company.com" />
+
+              {/* PHONE NUMBERS (Functional tel: links) */}
+              <div className="info-item">
+                <span className="info-icon-small">📞</span>
+                <div>
+                  <h4>Direct Engineering Support</h4>
+                  <p>
+                    <a href="tel:+2348134635548" className="contact-link">+234 813 463 5548</a>
+                  </p>
+                  <p>
+                    <a href="tel:+2349028100161" className="contact-link">+234 902 810 0161</a>
+                  </p>
+                </div>
+              </div>
+
+              {/* EMAILS (Functional mailto: links) */}
+              <div className="info-item">
+                <span className="info-icon-small">✉️</span>
+                <div>
+                  <h4>Official Correspondence</h4>
+                  <p>
+                    <a href="mailto:info@probeworks.com" className="contact-link">info@probeworks.com</a>
+                  </p>
+                  <p>
+                    <a href="mailto:lucky-ochuko@probeworks.com" className="contact-link">lucky-ochuko@probeworks.com</a>
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="form-group">
-              <label className="form-label">Service Interest</label>
-              <select className="form-input">
-                <option>Asset Integrity Management</option>
-                <option>Crane Inspection</option>
-                <option>Drilling Support</option>
-                <option>NDT & Risk Analysis</option>
-                <option>Other Engineering Inquiry</option>
-              </select>
+            <div className="compliance-stamp">
+              <p>Certified to API, NACE, & IRATA Standards</p>
             </div>
+          </div>
 
-            <div className="form-group">
-              <label className="form-label">Message</label>
-              <textarea className="form-input form-textarea" placeholder="Tell us about your project or asset needs..."></textarea>
-            </div>
+          {/* RIGHT: High-End Contact Form */}
+          <div className="contact-form-card">
+            <h3 className="form-title">Submit a Technical Inquiry</h3>
+            <form onSubmit={(e) => e.preventDefault()} className="pwr-form">
+              <div className="form-row">
+                <div className="form-field">
+                  <label>Full Name</label>
+                  <input type="text" placeholder="John Doe" required />
+                </div>
+                <div className="form-field">
+                  <label>Work Email</label>
+                  <input type="email" placeholder="j.doe@company.com" required />
+                </div>
+              </div>
 
-            <button type="submit" className="btn-submit">
-              Send Message
-            </button>
-            <p className="text-center text-xs text-slate-400 mt-6">
-              By submitting this form, you agree to our privacy policy and 
-              HSE compliance standards.
-            </p>
-          </form>
+              <div className="form-field">
+                <label>Company / Organization</label>
+                <input type="text" placeholder="Enter company name" required />
+              </div>
+
+              <div className="form-field">
+                <label>Primary Service Interest</label>
+                <select>
+                  <option>Asset Integrity Management</option>
+                  <option>Non-Destructive Testing (NDT)</option>
+                  <option>Subsea Engineering & ROV</option>
+                  <option>Crane & Lifting Equipment Inspection</option>
+                  <option>Statutory Compliance Audit</option>
+                </select>
+              </div>
+
+              <div className="form-field">
+                <label>Scope of Inquiry</label>
+                <textarea placeholder="Please provide a brief overview of your technical requirements..." required></textarea>
+              </div>
+
+              <button type="submit" className="pwr-submit-btn">
+                Initiate Consultation
+              </button>
+              
+              <p className="form-disclaimer">
+                All inquiries are handled in accordance with ISO 9001:2015 data 
+                protocols and QHSE confidentiality standards.
+              </p>
+            </form>
+          </div>
         </div>
       </div>
     </div>

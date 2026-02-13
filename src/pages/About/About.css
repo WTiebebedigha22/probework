@@ -1,85 +1,77 @@
-:root {
-  --loopin-indigo: #6366f1;
-  --loopin-slate: #0f172a;
-  --loopin-gray: #64748b;
-  --loopin-bg: #f8fafc;
-  --savills-red: #cc0000;
-  --radius-lg: 24px;
-  --radius-md: 16px;
-  --radius-pill: 100px;
-  --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.about-page {
-  background-color: var(--loopin-bg);
-  color: var(--loopin-slate);
-  font-family: 'Inter', -apple-system, sans-serif;
-}
-
-/* Loopin Hero Style: Soft Gradients & Centered Typography */
+/* --- Hero --- */
 .about-hero {
-  padding: 140px 5% 100px;
-  text-align: center;
-  background: radial-gradient(circle at top right, #eef2ff 0%, #f8fafc 100%);
+  height: 60vh;
+  background: linear-gradient(rgba(0, 30, 61, 0.7), rgba(0, 30, 61, 0.5)), 
+              url('https://images.unsplash.com/photo-1503596476-1c12a8ba09a9?auto=format&fit=crop&q=80&w=2000') center/cover;
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
-
-.hero-badge {
-  background: #e0e7ff;
-  color: var(--loopin-indigo);
-  padding: 8px 16px;
-  border-radius: var(--radius-pill);
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 2rem;
+  padding: 0 9%;
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 7vw, 4.5rem);
+  font-size: 3.5rem;
   font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1;
-  margin-bottom: 1.5rem;
+  color: #fff;
+  margin: 1.5rem 0;
 }
 
-.text-gradient {
-  background: linear-gradient(135deg, var(--loopin-indigo), var(--savills-red));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.text-highlight {
+  color: #007bff;
 }
 
 .hero-description {
-  max-width: 650px;
-  font-size: 1.25rem;
-  color: var(--loopin-gray);
+  color: #f0f0f0;
+  max-width: 600px;
+  font-size: 1.2rem;
   line-height: 1.6;
-  margin-bottom: 3rem;
 }
 
-/* Leadership Section: Tech-SaaS Card Style */
+/* --- Vision Section --- */
+.vision-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.vision-content h2 {
+  font-size: 2.5rem;
+  color: var(--pwr-navy);
+  margin-top: 1rem;
+}
+
+.vision-content p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-top: 1.5rem;
+}
+
+.vision-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 20px 20px 0px var(--pwr-navy);
+}
+
+/* --- Leadership Card --- */
 .leadership-section {
-  padding: 100px 10%;
+  padding: 100px 0;
 }
 
 .leadership-card {
-  background: white;
-  border-radius: var(--radius-lg);
-  padding: 60px;
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 60px;
-  align-items: center;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.04);
+  display: flex;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.05);
 }
 
 .leader-image-container {
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  height: 500px;
+  flex: 0 0 400px;
+  position: relative;
+  background: #f4f7f9;
 }
 
 .leader-image {
@@ -88,113 +80,147 @@
   object-fit: cover;
 }
 
+.leader-experience-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: var(--pwr-blue-accent);
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.leader-content {
+  padding: 4rem;
+}
+
 .leader-name {
   font-size: 2.5rem;
   font-weight: 800;
-  margin-bottom: 1rem;
+  color: var(--pwr-navy);
+  margin-bottom: 0.5rem;
 }
 
-.leader-bio {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: var(--loopin-gray);
+.leader-title {
+  color: var(--pwr-blue-accent);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   margin-bottom: 2rem;
 }
 
-/* Project Cards: Glassmorphism / Modern Grid */
+.leader-bio {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.cert-item {
+  font-weight: 700;
+  color: var(--pwr-navy);
+  font-size: 0.9rem;
+}
+
+.cert-check {
+  color: var(--pwr-blue-accent);
+  margin-right: 8px;
+}
+
+/* --- Project Grid --- */
 .portfolio-section {
-  padding: 100px 10%;
+  padding: 80px 0;
 }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 40px;
 }
 
 .project-card {
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
-  border: 1px solid white;
-  padding: 40px;
-  border-radius: var(--radius-md);
-  transition: var(--transition);
+  background: #fff;
+  padding: 2.5rem;
+  border: 1px solid #eee;
+  border-top: 5px solid var(--pwr-navy);
+  transition: 0.3s;
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
-  background: white;
-  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  border-top-color: var(--pwr-blue-accent);
 }
 
 .project-year {
-  color: var(--loopin-indigo);
-  font-weight: 700;
-  font-size: 0.9rem;
-  display: block;
-  margin-bottom: 1rem;
+  color: var(--pwr-blue-accent);
+  font-weight: 800;
+  font-size: 1.2rem;
 }
 
-/* Loopin Buttons: Pill Shaped */
-.btn-pill {
-  padding: 16px 36px;
-  border-radius: var(--radius-pill);
-  font-weight: 600;
+.project-client {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0.5rem 0 1rem 0;
+  color: var(--pwr-navy);
+}
+
+.project-task {
+  color: #666;
   font-size: 0.95rem;
-  transition: var(--transition);
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+  line-height: 1.5;
 }
 
-.btn-primary {
-  background: var(--loopin-slate);
-  color: white;
-  border: none;
-}
-
-.btn-primary:hover {
-  background: var(--loopin-indigo);
-  transform: scale(1.03);
-}
-
-.btn-outline {
-  background: transparent;
-  border: 1px solid #e2e8f0;
-  color: var(--loopin-slate);
-}
-
-.btn-outline:hover {
-  border-color: var(--loopin-indigo);
-}
-
-/* CTA: High Impact SaaS Section */
+/* --- About CTA --- */
 .about-cta {
-  margin: 100px 10%;
-  padding: 80px;
-  background: var(--loopin-slate);
-  border-radius: 40px;
-  color: white;
+  background: var(--pwr-navy);
+  padding: 100px 9%;
   text-align: center;
-  position: relative;
-  overflow: hidden;
+  color: #fff;
 }
 
-.cta-circle {
-  position: absolute;
-  top: -100px;
-  right: -100px;
-  width: 300px;
-  height: 300px;
-  background: var(--loopin-indigo);
-  filter: blur(120px);
-  opacity: 0.3;
+.about-cta h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  align-items: center;
+}
+
+.cta-button-white {
+  background: #fff;
+  color: var(--pwr-navy);
+  padding: 18px 35px;
+  font-weight: 800;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.cta-link-light {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  border-bottom: 2px solid rgba(255,255,255,0.3);
+  padding-bottom: 5px;
 }
 
 @media (max-width: 992px) {
-  .leadership-card {
-    grid-template-columns: 1fr;
-    padding: 30px;
-  }
+  .vision-section, .leadership-card { flex-direction: column; }
+  .leader-image-container { flex: 0 0 350px; }
+  .hero-title { font-size: 2.5rem; }
 }
