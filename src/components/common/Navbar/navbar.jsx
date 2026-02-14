@@ -49,7 +49,7 @@ const Navbar = () => {
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle navigation"
           >
-            {menuOpen ? <X size={28} /> : <Menu size={28} />}
+            {menuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
 
           <div className={`navbar__menu-overlay ${menuOpen ? "active" : ""}`} onClick={() => setMenuOpen(false)}></div>
@@ -62,7 +62,7 @@ const Navbar = () => {
             <li><Link to="/contact" className={location.pathname === "/contact" ? "active-link" : ""}>Contact</Link></li>
             <li className="nav-cta">
               <Link to="/verify">
-                <ShieldCheck size={16} />
+                <ShieldCheck size={14} />
                 <span>Verify Certification</span>
               </Link>
             </li>

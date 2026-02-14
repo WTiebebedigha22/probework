@@ -60,9 +60,16 @@
   align-items: center;
 }
 
+.top-bar__right {
+  display: flex;
+  gap: 20px;
+  padding: 0 40px;
+}
+
 .contact-info {
   display: flex;
   gap: 25px;
+  padding: 0 40px;
 }
 
 .contact-item {
@@ -92,6 +99,7 @@
 .navbar__logo img {
   height: 60px;
   transition: var(--transition-smooth);
+  margin-left: 50px;
 }
 
 .header--scrolled .navbar__logo img {
@@ -134,10 +142,11 @@
   background: var(--pwr-navy);
   color: white !important;
   padding: 10px 20px;
+  margin-right: 70px;
   border-radius: 4px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   font-size: 0.8rem;
   text-transform: uppercase;
 }
@@ -149,51 +158,33 @@
 
 /* --- MOBILE --- */
 
-@media (max-width: 992px) {
-  .top-bar__right { 
-    display: none; 
-  }
-  
-  .navbar__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 20px;
-  }
+.navbar__toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--pwr-navy);
+  cursor: pointer;
+}
 
-  .navbar__toggle { 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    margin-right: -8px; 
-    background: none;
-    border: none;
-    cursor: pointer;
-    position: relative; /* Removed 'fixed' to keep it in the nav flow */
-    z-index: 1001;
-  }
+@media (max-width: 992px) {
+  .top-bar__right { display: none; }
+  .navbar__toggle { display: block; }
 
   .navbar__links {
     position: fixed;
     top: 0;
-    right: -100%; /* Hidden by default */
+    right: -100%;
     height: 100vh;
     width: 280px;
     background: white;
     flex-direction: column;
     padding: 100px 40px;
     align-items: flex-start;
-    gap: 25px; /* Spacing between mobile menu items */
     box-shadow: -10px 0 30px rgba(0,0,0,0.1);
-    transition: var(--transition-smooth);
     z-index: 1000;
   }
 
-  .navbar__links.active {
-    right: 0; /* Slides in from the right */
-  }
+  .navbar__links.active { right: 0; }
 
   .navbar__menu-overlay.active {
     position: fixed;
