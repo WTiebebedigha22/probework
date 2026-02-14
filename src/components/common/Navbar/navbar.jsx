@@ -16,14 +16,12 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close menu when route changes
   useEffect(() => {
     setMenuOpen(false);
   }, [location]);
 
   return (
     <header className={`header-wrapper ${scrolled ? 'header--scrolled' : ''}`}>
-      {/* Top Contact Bar - Hidden on scroll for focus */}
       <div className="top-bar">
         <div className="container top-bar__content">
           <div className="contact-info">
@@ -40,7 +38,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Main Navigation */}
       <nav className="navbar">
         <div className="container navbar__container">
           <Link to="/" className="navbar__logo">
@@ -58,21 +55,11 @@ const Navbar = () => {
           <div className={`navbar__menu-overlay ${menuOpen ? "active" : ""}`} onClick={() => setMenuOpen(false)}></div>
 
           <ul className={`navbar__links ${menuOpen ? "active" : ""}`}>
-            <li>
-              <Link to="/" className={location.pathname === "/" ? "active-link" : ""}>Home</Link>
-            </li>
-            <li>
-              <Link to="/services" className={location.pathname === "/services" ? "active-link" : ""}>Services</Link>
-            </li>
-            <li>
-              <Link to="/safety" className={location.pathname === "/safety" ? "active-link" : ""}>Safety & QHSE</Link>
-            </li>
-            <li>
-              <Link to="/about" className={location.pathname === "/about" ? "active-link" : ""}>About Us</Link>
-            </li>
-            <li>
-              <Link to="/contact" className={location.pathname === "/contact" ? "active-link" : ""}>Contact</Link>
-            </li>
+            <li><Link to="/" className={location.pathname === "/" ? "active-link" : ""}>Home</Link></li>
+            <li><Link to="/services" className={location.pathname === "/services" ? "active-link" : ""}>Services</Link></li>
+            <li><Link to="/safety" className={location.pathname === "/safety" ? "active-link" : ""}>Safety & QHSE</Link></li>
+            <li><Link to="/about" className={location.pathname === "/about" ? "active-link" : ""}>About Us</Link></li>
+            <li><Link to="/contact" className={location.pathname === "/contact" ? "active-link" : ""}>Contact</Link></li>
             <li className="nav-cta">
               <Link to="/verify">
                 <ShieldCheck size={16} />
