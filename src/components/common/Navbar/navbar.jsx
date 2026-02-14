@@ -8,7 +8,6 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
 
-  // Handle scroll effect for professional glass/shadow transition
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);

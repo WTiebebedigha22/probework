@@ -31,7 +31,7 @@
 .top-bar {
   background: var(--pwr-navy);
   color: #ffffff;
-  padding: 8px 0;
+  padding: 8px;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -78,7 +78,7 @@
 }
 
 .navbar__logo img {
-  height: 45px;
+  height: 80px;
   transition: height 0.3s ease;
 }
 
@@ -161,7 +161,11 @@
 @media (max-width: 992px) {
   .top-bar__right { display: none; }
   
-  .navbar__toggle { display: block; }
+  .navbar__toggle { 
+    display: inline-flex;
+    padding-left: 73%;
+    position: fixed; 
+  }
 
   .navbar__links {
     position: fixed;
