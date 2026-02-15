@@ -88,37 +88,51 @@ const Home = () => {
         </section>
 
         {/* --- FEATURE HIGHLIGHTS (Asymmetrical Grid) --- */}
-        <section className="highlights-section">
-          <div className="highlight-row">
-            <div className="highlight-image img-team-bg">
-               <div className="image-caption">Operational Rigor</div>
-            </div>
-            <div className="highlight-text">
-              <div className="icon-wrap"><Ship /></div>
-              <h3>If it matters to your fleet, it matters to us.</h3>
-              <p>
-                With a global network of specialized professionals, we build trusted 
-                relationships that are the heart of our business.
-              </p>
-              <a href="/services" className="editorial-link">Find a Technical Expert</a>
-            </div>
-          </div>
+<section className="highlights-section">
+  <div className="highlight-row">
+    <div 
+      className="highlight-image img-team-bg"
+      style={{ 
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('/src/assets/Home/vessel.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+    >
+       <div className="image-caption">Operational Rigor</div>
+    </div>
+    <div className="highlight-text">
+      <div className="icon-wrap"><Ship /></div>
+      <h3>If it matters to your fleet, it matters to us.</h3>
+      <p>
+        With a global network of specialized professionals, we build trusted 
+        relationships that are the heart of our business.
+      </p>
+      <a href="/services" className="editorial-link">Find a Technical Expert</a>
+    </div>
+  </div>
 
-          <div className="highlight-row reverse">
-            <div className="highlight-text">
-              <div className="icon-wrap"><BarChart3 /></div>
-              <h3>Empowering you with world-class logistics.</h3>
-              <p>
-                Our in-depth market insights and maritime research help guide clients 
-                to make informed decisions in volatile energy markets.
-              </p>
-              <a href="/services" className="editorial-link">Read Market Insights</a>
-            </div>
-            <div className="highlight-image img-analysis-bg">
-               <div className="image-caption">Asset Optimization</div>
-            </div>
-          </div>
-        </section>
+  <div className="highlight-row reverse">
+    <div className="highlight-text">
+      <div className="icon-wrap"><BarChart3 /></div>
+      <h3>Empowering you with world-class logistics.</h3>
+      <p>
+        Our in-depth market insights and maritime research help guide clients 
+        to make informed decisions in volatile energy markets.
+      </p>
+      <a href="/services" className="editorial-link">Read Market Insights</a>
+    </div>
+    <div 
+      className="highlight-image img-analysis-bg"
+      style={{ 
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('/src/assets/Home/img_analysis.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+    >
+       <div className="image-caption">Asset Optimization</div>
+    </div>
+  </div>
+</section>
 
         {/* --- QHSE PROMISE SECTION --- */}
         <section className="qhse-banner">

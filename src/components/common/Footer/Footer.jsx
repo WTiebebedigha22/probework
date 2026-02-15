@@ -6,8 +6,40 @@ import "./Footer.css";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  // Corporate Logos sourced from reliable CDN/Official sources
+  const partners = [
+  { name: "Seplat Energy", logo: "/src/assets/Footer/seplat.png" },
+  { name: "ExxonMobil", logo: "/src/assets/Footer/exxonmobil.png" },
+  { name: "Shell", logo: "/src/assets/Footer/shell.png" },
+  { name: "Bureau Veritas", logo: "/src/assets/Footer/bureau_veritas.png" },
+  { name: "TotalEnergies", logo: "/src/assets/Footer/totalenergies.png" },
+  { name: "Chevron", logo: "/src/assets/Footer/chevron.png" },
+  { name: "Saipem", logo: "/src/assets/Footer/saipem_eni.png" },
+  { name: "First E & P", logo: "/src/assets/Footer/first-ep.png" },
+  { name: "BW Offshore", logo: "/src/assets/Footer/bw_offshore.png" },
+];
+
   return (
     <footer className="footer">
+      {/* Partners/Trust Section */}
+      <div className="footer-partners">
+        <div className="footer-container">
+          <p className="partners-title">Strategic Partners & Clients</p>
+          <div className="partners-grid">
+            {partners.map((partner, index) => (
+              <div key={index} className="partner-item">
+                <img 
+                  src={partner.logo} 
+                  alt={`${partner.name} logo`} 
+                  loading="lazy"
+                  onError={(e) => { e.target.style.display = 'none'; }} // Hides broken logos if links change
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
       <div className="footer-top">
         <div className="footer-container">
           {/* Column 1: Brand Authority */}
@@ -25,7 +57,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Column 2: Specialized Sectors */}
+          {/* Column 2: Sectors */}
           <div className="footer-column">
             <h4 className="footer-heading">Sectors</h4>
             <ul className="footer-links">
@@ -37,7 +69,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 3: Navigation */}
+          {/* Column 3: Company */}
           <div className="footer-column">
             <h4 className="footer-heading">Company</h4>
             <ul className="footer-links">
@@ -48,13 +80,14 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 4: Contact Liaison */}
+          {/* Column 4: Contact */}
           <div className="footer-column contact-col">
             <h4 className="footer-heading">Global Headquarters</h4>
             <div className="contact-details">
               <div className="contact-line">
                 <MapPin size={16} className="text-blue" />
-                <span>Maritime Hub, Victoria Island, Lagos</span>
+                <span>Lekki Gardens Horizon Heights
+Lekki Lagos</span>
               </div>
               <a href="tel:+2348134635548" className="contact-line link">
                 <Phone size={16} className="text-blue" />
@@ -75,7 +108,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="footer-container bottom-flex">
           <p className="copyright">
-            &copy; {currentYear} ProbeWork Resources Limited. All Rights Reserved. Designed by WTiebebedigha
+            &copy; {currentYear} ProbeWork Resources Limited. All Rights Reserved.
           </p>
           <div className="legal-links">
             <Link to="/privacy">Privacy</Link>

@@ -3,30 +3,41 @@ import './Services.css';
 
 const Services = () => {
   const serviceData = [
-    {
-      title: "Inspection, Maintenance & Integrity",
-      description: "Comprehensive structural assessments, NDT inspections, and preventive maintenance programs designed to extend asset life cycles and ensure regulatory compliance.",
-      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=800",
-      tags: ['Non-Destructive Testing (NDT)', 'Pressure Vessel Inspection', 'Corrosion Management', 'Risk-Based Inspection (RBI)']
-    },
-    {
-      title: "Subsea & Diving Services",
-      description: "Precision underwater engineering including ROV surveys, pipeline integrity checks, and cathodic protection systems for deep-water offshore installations.",
-      image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=800",
-      tags: ['ROV Operations', 'Pipeline SURF', 'Underwater NDT', 'Subsea Maintenance']
-    },
-    {
-      title: "Marine Logistics & Vessel Management",
-      description: "Strategic maritime supply chain solutions, technical vessel management, and offshore support vessel (OSV) chartering for complex offshore operations.",
-      image: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&q=80&w=800",
-      tags: ['Vessel Chartering', 'Offshore Support', 'Port Agency', 'Marine Consultancy']
-    },
-    {
-      title: "OCTG & Drilling Support",
-      description: "Technical services for Oil Country Tubular Goods (OCTG), including threading, inspection, and inventory management to optimize drilling efficiency.",
-      image: "https://images.unsplash.com/photo-1503596476-1c12a8ba09a9?auto=format&fit=crop&q=80&w=800",
-      tags: ['Casing & Tubing Inspection', 'Drill Pipe Services', 'Hardbanding', 'Thread Gauging']
-    }
+  {
+    title: "Inspection, Maintenance & Integrity",
+    description: "Comprehensive structural assessments, NDT inspections, and preventive maintenance programs designed to extend asset life cycles and ensure regulatory compliance.",
+    // Image: Focused on technical NDT/Industrial inspection
+    image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800",
+    tags: ['Non-Destructive Testing (NDT)', 'Pressure Vessel Inspection', 'Corrosion Management', 'Risk-Based Inspection (RBI)']
+  },
+  {
+    title: "Subsea & Diving Services",
+    description: "Precision underwater engineering including ROV surveys, pipeline integrity checks, and cathodic protection systems for deep-water offshore installations.",
+    // Image: Professional ROV/Underwater engineering focus
+    image: "https://images.unsplash.com/photo-1629235484854-586400782c70?auto=format&fit=crop&q=80&w=800",
+    tags: ['ROV Operations', 'Pipeline SURF', 'Underwater NDT', 'Subsea Maintenance']
+  },
+  {
+    title: "Marine Logistics & Vessel Management",
+    description: "Strategic maritime supply chain solutions, technical vessel management, and offshore support vessel (OSV) chartering for complex offshore operations.",
+    // Image: Offshore supply vessel (OSV) in action
+    image: "https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&q=80&w=800",
+    tags: ['Vessel Chartering', 'Offshore Support', 'Port Agency', 'Marine Consultancy']
+  },
+  {
+    title: "OCTG & Drilling Support",
+    description: "Technical services for Oil Country Tubular Goods (OCTG), including threading, inspection, and inventory management to optimize drilling efficiency.",
+    // Image: Industrial drilling pipes/OCTG yard
+    image: "https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&q=80&w=800",
+    tags: ['Casing & Tubing Inspection', 'Drill Pipe Services', 'Hardbanding', 'Thread Gauging']
+  },
+  {
+    title: "Ship Class & Statutory Inspection",
+    description: "Certified hull and machinery surveys conducted in accordance with major Classification Societies. We ensure vessels maintain class status and comply with international maritime safety conventions.",
+    // Image: Large vessel in dry dock for hull inspection
+    image: "https://images.unsplash.com/photo-1580637251182-96576856006e?auto=format&fit=crop&q=80&w=800",
+    tags: ['Hull & Machinery Surveys', 'IWS (In-Water Surveys)', 'UTM (Ultrasonic Thickness Measurement)', 'Class Renewal Support']
+  }
   ];
 
   return (

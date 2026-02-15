@@ -30,7 +30,7 @@ const Contact = () => {
                 <span className="info-icon-small">📍</span>
                 <div>
                   <h4>Primary Base</h4>
-                  <p>Serving Onshore & Offshore Assets, <br />Port Harcourt / Lagos, Nigeria</p>
+                  <p>Serving Onshore & Offshore Assets, <br />Lekki Gardens Horizon Heights, Lekki Lagos, Nigeria</p>
                 </div>
               </div>
 
