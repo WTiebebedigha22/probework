@@ -102,7 +102,7 @@ const Safety = () => {
           </div>
           <div className="compliance-visual">
             <img 
-              src="https://images.unsplash.com/photo-1574621100236-d25b64cfd647?auto=format&fit=crop&q=80&w=1000" 
+              src="/src/assets/Home/img_experts_bg.jpg" 
               alt="Technician performing NDT inspection" 
             />
             <div className="floating-badge">QA/QC Certified</div>
