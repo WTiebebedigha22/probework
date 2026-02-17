@@ -154,7 +154,7 @@
 
 .floating-badge {
   position: absolute;
-  bottom: -20px;
+  bottom: -35px;
   right: -20px;
   background: var(--pwr-navy);
   color: #fff;

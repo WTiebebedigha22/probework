@@ -17,6 +17,7 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMenuOpen(false);
   }, [location]);
 
@@ -25,11 +26,11 @@ const Navbar = () => {
       <div className="top-bar">
         <div className="container top-bar__content">
           <div className="contact-info">
-            <a href="mailto:info@probeworks.com" className="contact-item">
-              <Mail size={12} strokeWidth={3} /> <span>info@probeworks.com</span>
+            <a href="mailto:info@probework.com" className="contact-item">
+              <Mail size={12} strokeWidth={3} /> <span>info@probework.com</span>
             </a>
             <a href="tel:+2348134635548" className="contact-item">
-              <Phone size={12} strokeWidth={3} /> <span>+234 813 463 5548</span>
+              <Phone size={12} strokeWidth={3} /> <span>+2348134635548</span>
             </a>
           </div>
           <div className="top-bar__right">

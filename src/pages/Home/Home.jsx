@@ -13,7 +13,7 @@ const Home = () => {
     {
       title: "Advancing Asset Integrity",
       subtitle: "Precision engineering and lifecycle management for the global energy sector.",
-      image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=2000"
+      image: "/src/assets/Home/hero_image_bg.jpg"
     },
     {
       title: "Operational Excellence",
@@ -107,29 +107,29 @@ const Home = () => {
         With a global network of specialized professionals, we build trusted 
         relationships that are the heart of our business.
       </p>
-      <a href="/services" className="editorial-link">Find a Technical Expert</a>
+      <a href="/contact" className="editorial-link">Consult a Technical Expert</a>
     </div>
   </div>
 
   <div className="highlight-row reverse">
     <div className="highlight-text">
+    <div 
+      className="highlight-image img-analysis-bg"
+      style={{ 
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('/src/assets/Home/analysis.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+    >
+       <div className="image-caption">Asset Optimization</div>
+    </div>
       <div className="icon-wrap"><BarChart3 /></div>
       <h3>Empowering you with world-class logistics.</h3>
       <p>
         Our in-depth market insights and maritime research help guide clients 
         to make informed decisions in volatile energy markets.
       </p>
-      <a href="/services" className="editorial-link">Read Market Insights</a>
-    </div>
-    <div 
-      className="highlight-image img-analysis-bg"
-      style={{ 
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('/src/assets/Home/img_analysis.jpg')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
-      }}
-    >
-       <div className="image-caption">Asset Optimization</div>
+      <a href="/services" className="editorial-link">Read More</a>
     </div>
   </div>
 </section>

@@ -55,12 +55,12 @@ const AboutUs = () => {
                 className="leader-image"
                 alt="Lucky Ochuko Idjenughwa"
               />
-              <div className="leader-experience-badge">15+ Years Experience</div>
+              <div className="leader-experience-badge">5+ Years Experience</div>
             </div>
             <div className="leader-content">
               <p className="overline">Executive Leadership</p>
               <h2 className="leader-name">Lucky Ochuko Idjenughwa</h2>
-              <p className="leader-title">Managing Director / Lead Engineer</p>
+              <p className="leader-title">Managing Director</p>
               
               <p className="leader-bio">
                 A Production Engineering graduate from the University of Benin, Lucky has 

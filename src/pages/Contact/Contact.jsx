@@ -54,7 +54,7 @@ const Contact = () => {
                 <div>
                   <h4>Official Correspondence</h4>
                   <p>
-                    <a href="mailto:info@probeworks.com" className="contact-link">info@probeworks.com</a>
+                    <a href="mailto:info@probework.com" className="contact-link">info@probework.com</a>
                   </p>
                   <p>
                     <a href="mailto:lucky-ochuko@probeworks.com" className="contact-link">lucky-ochuko@probeworks.com</a>

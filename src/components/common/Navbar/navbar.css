@@ -68,9 +68,9 @@
 
 .contact-info {
   display: flex;
-  gap: 25px;
+  gap: 20px;
   padding: 0 40px;
-}
+  }
 
 .contact-item {
   color: #ffffff;
@@ -79,6 +79,7 @@
   align-items: center;
   gap: 8px;
   transition: color 0.3s;
+  font-size: auto;
 }
 
 .contact-item:hover { color: var(--pwr-blue); }
@@ -159,16 +160,21 @@
 /* --- MOBILE --- */
 
 .navbar__toggle {
-  display: none;
+  display: flex;
   background: none;
   border: none;
   color: var(--pwr-navy);
   cursor: pointer;
+  right: 25px;
+  position: fixed;
 }
 
 @media (max-width: 992px) {
   .top-bar__right { display: none; }
-  .navbar__toggle { display: block; }
+  .navbar__toggle { 
+    display: flex; 
+    position: flex;
+  }
 
   .navbar__links {
     position: fixed;

@@ -16,7 +16,7 @@ const Footer = () => {
   { name: "Chevron", logo: "/src/assets/Footer/chevron.png" },
   { name: "Saipem", logo: "/src/assets/Footer/saipem_eni.png" },
   { name: "First E & P", logo: "/src/assets/Footer/first-ep.png" },
-  { name: "BW Offshore", logo: "/src/assets/Footer/bw_offshore.png" },
+  { name: "BW Offshore", logo: "/src/assets/Footer/bw.png" },
 ];
 
   return (
@@ -76,7 +76,7 @@ const Footer = () => {
               <li><Link to="/about">About ProbeWork</Link></li>
               <li><Link to="/safety">Safety & QHSE</Link></li>
               <li><Link to="/contact">Technical Offices</Link></li>
-              <li><Link to="/verify">Verify Certification</Link></li>
+              <li><Link to="/.">Verify Certification</Link></li>
             </ul>
           </div>
 
@@ -86,16 +86,15 @@ const Footer = () => {
             <div className="contact-details">
               <div className="contact-line">
                 <MapPin size={16} className="text-blue" />
-                <span>Lekki Gardens Horizon Heights
-Lekki Lagos</span>
+                <span>Lekki Gardens Horizon Heights, Lekki, Lagos</span>
               </div>
               <a href="tel:+2348134635548" className="contact-line link">
                 <Phone size={16} className="text-blue" />
                 <span>+234 813 463 5548</span>
               </a>
-              <a href="mailto:info@probeworks.com" className="contact-line link">
+              <a href="mailto:info@probework.com" className="contact-line link">
                 <Mail size={16} className="text-blue" />
-                <span>info@probeworks.com</span>
+                <span>info@probework.com</span>
               </a>
             </div>
             <Link to="/contact" className="footer-cta-btn">
@@ -108,7 +107,7 @@ Lekki Lagos</span>
       <div className="footer-bottom">
         <div className="footer-container bottom-flex">
           <p className="copyright">
-            &copy; {currentYear} ProbeWork Resources Limited. All Rights Reserved.
+            &copy; {currentYear} ProbeWork Resources Limited. All Rights Reserved. Designed by WTiebebedigha
           </p>
           <div className="legal-links">
             <Link to="/privacy">Privacy</Link>

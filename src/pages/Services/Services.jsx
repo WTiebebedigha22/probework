@@ -14,7 +14,7 @@ const Services = () => {
     title: "Subsea & Diving Services",
     description: "Precision underwater engineering including ROV surveys, pipeline integrity checks, and cathodic protection systems for deep-water offshore installations.",
     // Image: Professional ROV/Underwater engineering focus
-    image: "https://images.unsplash.com/photo-1629235484854-586400782c70?auto=format&fit=crop&q=80&w=800",
+    image: "/src/assets/Services/subsea.jpg",
     tags: ['ROV Operations', 'Pipeline SURF', 'Underwater NDT', 'Subsea Maintenance']
   },
   {
@@ -35,7 +35,7 @@ const Services = () => {
     title: "Ship Class & Statutory Inspection",
     description: "Certified hull and machinery surveys conducted in accordance with major Classification Societies. We ensure vessels maintain class status and comply with international maritime safety conventions.",
     // Image: Large vessel in dry dock for hull inspection
-    image: "https://images.unsplash.com/photo-1580637251182-96576856006e?auto=format&fit=crop&q=80&w=800",
+    image: "/src/assets/Services/subseas.jpg",
     tags: ['Hull & Machinery Surveys', 'IWS (In-Water Surveys)', 'UTM (Ultrasonic Thickness Measurement)', 'Class Renewal Support']
   }
   ];
@@ -48,7 +48,7 @@ const Services = () => {
           <div className="service-badge">Operational Excellence</div>
           <h1>World-Class <br />Technical Capabilities</h1>
           <p>
-            ODK International provides integrated asset integrity and engineering solutions 
+            Probeworks Resources provides integrated asset integrity and engineering solutions 
             designed to minimize risk and maximize productivity in the world's most 
             demanding environments.
           </p>
@@ -98,7 +98,7 @@ const Services = () => {
                 From feasibility studies to EPCIC project management, we provide 
                 the specialized insights required for high-capital energy investments.
               </p>
-              <button className="cta-button-light">Download Capability Statement</button>
+              <button className="cta-button-light"><a></a>Download Capability Statement</button>
             </div>
             <div className="featured-image"></div>
           </div>
