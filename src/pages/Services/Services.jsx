@@ -98,7 +98,7 @@ const Services = () => {
                 From feasibility studies to EPCIC project management, we provide 
                 the specialized insights required for high-capital energy investments.
               </p>
-              <button className="cta-button-light"><a></a>Download Capability Statement</button>
+              <button className="cta-button-light"><a></a>Request Capability Statement</button>
             </div>
             <div className="featured-image"></div>
           </div>
