@@ -42,7 +42,7 @@ const Home = () => {
             <SwiperSlide key={index}>
               <div 
                 className="hero-slide" 
-                style={{ backgroundImage: `linear-gradient(rgba(0,30,61,0.6), rgba(0,30,61,0.6)), url(${slide.image})` }}
+                style={{ backgroundImage: `linear-gradient(rgba(0, 30, 61, 0.25), rgba(0,30,61,0.6)), url(${slide.image})` }}
               >
                 <div className="hero-content-box">
                   <div className="accent-line"></div>
@@ -113,6 +113,14 @@ const Home = () => {
 
   <div className="highlight-row reverse">
     <div className="highlight-text">
+      <div className="icon-wrap"><BarChart3 /></div>
+      <h3>Empowering you with world-class logistics.</h3>
+      <p>
+        Our in-depth market insights and maritime research help guide clients 
+        to make informed decisions in volatile energy markets.
+      </p>
+      <a href="/services" className="editorial-link">Read More</a>
+    </div>
     <div 
       className="highlight-image img-analysis-bg"
       style={{ 
@@ -122,14 +130,6 @@ const Home = () => {
       }}
     >
        <div className="image-caption">Asset Optimization</div>
-    </div>
-      <div className="icon-wrap"><BarChart3 /></div>
-      <h3>Empowering you with world-class logistics.</h3>
-      <p>
-        Our in-depth market insights and maritime research help guide clients 
-        to make informed decisions in volatile energy markets.
-      </p>
-      <a href="/services" className="editorial-link">Read More</a>
     </div>
   </div>
 </section>
