@@ -51,7 +51,7 @@ const Footer = () => {
               engineered for safety.
             </p>
             <div className="accreditation-row">
-              <span className="cert-tag">API Certified</span>
+              <span className="cert-tag">API Certified </span>
               <span className="cert-tag">NACE</span>
               <span className="cert-tag">ISO 9001</span>
             </div>
