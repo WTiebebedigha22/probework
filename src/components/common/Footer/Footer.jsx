@@ -8,15 +8,15 @@ const Footer = () => {
 
   // Corporate Logos sourced from reliable CDN/Official sources
   const partners = [
-  { name: "Seplat Energy", logo: "/src/assets/Footer/seplat.png" },
-  { name: "ExxonMobil", logo: "/src/assets/Footer/exxonmobil.png" },
-  { name: "Shell", logo: "/src/assets/Footer/shell.png" },
-  { name: "Bureau Veritas", logo: "/src/assets/Footer/bureau_veritas.png" },
-  { name: "TotalEnergies", logo: "/src/assets/Footer/totalenergies.png" },
-  { name: "Chevron", logo: "/src/assets/Footer/chevron.png" },
-  { name: "Saipem", logo: "/src/assets/Footer/saipem_eni.png" },
-  { name: "First E & P", logo: "/src/assets/Footer/first-ep.png" },
-  { name: "BW Offshore", logo: "/src/assets/Footer/bw.png" },
+  { name: "Seplat Energy", logo: "https://imgur.com/l6PfvmL" },
+  { name: "ExxonMobil", logo: "https://imgur.com/k2EENdS" },
+  { name: "Shell", logo: "https://imgur.com/a/Tmj2zPF" },
+  { name: "Bureau Veritas", logo: "https://imgur.com/a/HHUFfHr" },
+  { name: "TotalEnergies", logo: "https://imgur.com/a/g7NK4or" },
+  { name: "Chevron", logo: "https://imgur.com/a/Be4hwxy" },
+  { name: "Saipem", logo: "https://imgur.com/a/VSwGGOD" },
+  { name: "First E & P", logo: "https://imgur.com/a/sOHlEsm" },
+  { name: "BW Offshore", logo: "https://imgur.com/a/tA0mgvT" },
 ];
 
   return (
