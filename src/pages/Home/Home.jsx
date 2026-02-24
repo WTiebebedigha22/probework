@@ -13,7 +13,7 @@ const Home = () => {
     {
       title: "Advancing Asset Integrity",
       subtitle: "Precision engineering and lifecycle management for the global energy sector.",
-      image: "/src/assets/Home/hero_image_bg.jpg"
+      image: "https://github.com/WTiebebedigha22/probework/blob/master/src/components/assets/Home/hero_image_bg.jpg?raw=true"
     },
     {
       title: "Operational Excellence",
@@ -93,7 +93,7 @@ const Home = () => {
     <div 
       className="highlight-image img-team-bg"
       style={{ 
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('/src/assets/Home/vessel.jpg')`,
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('https://github.com/WTiebebedigha22/probework/blob/master/src/components/assets/Home/vessel.jpg?raw=true')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
@@ -124,7 +124,7 @@ const Home = () => {
     <div 
       className="highlight-image img-analysis-bg"
       style={{ 
-        backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('/src/assets/Home/analysis.jpg')`,
+        backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('https://github.com/WTiebebedigha22/probework/blob/master/src/components/assets/Home/img_team_bg.jpg?raw=true')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}

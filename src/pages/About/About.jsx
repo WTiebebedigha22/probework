@@ -42,7 +42,7 @@ const AboutUs = () => {
             </p>
           </div>
           <div className="vision-image">
-            <img src="https://i.imgur.com/83pX9zM.jpg?auto=format&fit=crop&q=80&w=1000" alt="Industrial Engineering" />
+            <img src="https://github.com/WTiebebedigha22/probework/blob/master/src/components/assets/About/industral%20Enginnering.jpg?raw=trueauto=format&fit=crop&q=80&w=1000" alt="Industrial Engineering" />
           </div>
         </section>
 

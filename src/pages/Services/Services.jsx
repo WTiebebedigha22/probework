@@ -14,7 +14,7 @@ const Services = () => {
     title: "Subsea & Diving Services",
     description: "Precision underwater engineering including ROV surveys, pipeline integrity checks, and cathodic protection systems for deep-water offshore installations.",
     // Image: Professional ROV/Underwater engineering focus
-    image: "/src/assets/Services/subsea.jpg",
+    image: "https://github.com/WTiebebedigha22/probework/blob/master/src/components/assets/Services/subsea.jpg?raw=true",
     tags: ['ROV Operations', 'Pipeline SURF', 'Underwater NDT', 'Subsea Maintenance']
   },
   {
@@ -35,7 +35,7 @@ const Services = () => {
     title: "Ship Class & Statutory Inspection",
     description: "Certified hull and machinery surveys conducted in accordance with major Classification Societies. We ensure vessels maintain class status and comply with international maritime safety conventions.",
     // Image: Large vessel in dry dock for hull inspection
-    image: "/src/assets/Services/subseas.jpg",
+    image: "https://github.com/WTiebebedigha22/probework/blob/master/src/components/assets/Services/subseas.jpg?raw=true",
     tags: ['Hull & Machinery Surveys', 'IWS (In-Water Surveys)', 'UTM (Ultrasonic Thickness Measurement)', 'Class Renewal Support']
   }
   ];

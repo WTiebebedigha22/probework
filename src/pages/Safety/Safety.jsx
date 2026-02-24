@@ -114,7 +114,7 @@ const Safety = () => {
           <div className="cta-inner">
             <h3>Rigorous Standards. Transparent Results.</h3>
             <p>Access our comprehensive Safety Management System (SMS) and QHSE policies.</p>
-            <button className="cta-button-navy">Download QHSE Manual</button>
+            <a href="/Contact" className="cta-button">Request Safety Documentation</a>
           </div>
         </section>
       </div>
