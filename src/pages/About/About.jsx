@@ -42,7 +42,7 @@ const AboutUs = () => {
             </p>
           </div>
           <div className="vision-image">
-            <img src="https://images.unsplash.com/photo-1541976591-fe45ca647637?auto=format&fit=crop&q=80&w=1000" alt="Industrial Engineering" />
+            <img src="https://i.imgur.com/83pX9zM.jpg?auto=format&fit=crop&q=80&w=1000" alt="Industrial Engineering" />
           </div>
         </section>
 
@@ -51,7 +51,7 @@ const AboutUs = () => {
           <div className="leadership-card">
             <div className="leader-image-container">
               <img 
-                src="/src/assets/About/Ceo.png" 
+                src="https://github.com/WTiebebedigha22/probework/blob/master/src/components/assets/About/Ceo.png?raw=true" 
                 className="leader-image"
                 alt="Lucky Ochuko Idjenughwa"
               />
