@@ -27,10 +27,10 @@ const Navbar = () => {
         <div className="container top-bar__content">
           <div className="contact-info">
             <a href="mailto:info@probework.com" className="contact-item">
-              <Mail size={12} strokeWidth={3} /> <span>info@probework.com</span>
+              <Mail size={10} strokeWidth={3} /> <span>info@probework.com</span>
             </a>
             <a href="tel:+2348134635548" className="contact-item">
-              <Phone size={12} strokeWidth={3} /> <span>+2348134635548</span>
+              <Phone size={10} strokeWidth={3} /> <span>+2348134635548</span>
             </a>
           </div>
           <div className="top-bar__right">
